@@ -4,7 +4,7 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service'; // Adjust path as needed
-import crypto from 'crypto';
+import * as crypto from 'crypto';
 import { MailService } from '@/common/mail/mail.service';
 
 @Injectable()

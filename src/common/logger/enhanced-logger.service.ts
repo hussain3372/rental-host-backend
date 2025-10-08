@@ -1,6 +1,6 @@
 import { Injectable, LoggerService as NestLoggerService } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import winston from 'winston';
+import * as winston from 'winston';
 import { ElasticsearchTransport } from 'winston-elasticsearch';
 
 export interface LogContext {
