@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "builds": [
-    { 
-      "src": "dist/main.js",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "api/main.js"
+      "dest": "api/index.js"
     }
   ],
   "env": {
     "NODE_ENV": "production"
+  },
+  "buildCommand": "npm run build:vercel",
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 30
+    }
   }
 }
