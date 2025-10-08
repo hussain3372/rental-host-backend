@@ -12,15 +12,15 @@ import {
   BadRequestException,
 } from '@nestjs/common';
 import { AnyFilesInterceptor } from '@nestjs/platform-express';
-import * as multer from 'multer';
-import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
+import * as _multer from 'multer'; // Import as namespace
+const multer = (_multer as any).default || _multer;
+const memoryStorage = multer.memoryStorage();
 import { RolesGuard } from '../auth/guards/roles.guard';
 import { Roles } from '../auth/decorators/roles.decorator';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import { UserRole } from '@prisma/client';
 import { StorageService } from './storage.service';
-
-const memoryStorage = multer.memoryStorage();
+import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 
 @Controller('applications')
 @UseGuards(JwtAuthGuard, RolesGuard)
