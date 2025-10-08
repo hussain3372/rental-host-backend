@@ -17,7 +17,7 @@ import { EnhancedLoggerService } from '../../common/logger/enhanced-logger.servi
 import { BadgeService } from './badge.service';
 import { MailService } from '../../common/mail/mail.service';
 import { NotificationService } from '../notification/notification.service';
-import * as crypto from 'crypto';
+import crypto from 'crypto';
 
 export interface CertificationWithDetails extends Certification {
   application: {

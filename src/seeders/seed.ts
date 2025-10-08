@@ -10,7 +10,7 @@ import {
   SupportTicketCategory,
 } from '@prisma/client';
 
-import * as bcrypt from 'bcrypt';
+import bcrypt from 'bcrypt';
 
 const prisma = new PrismaClient();
 

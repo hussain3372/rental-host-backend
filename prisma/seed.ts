@@ -1,5 +1,5 @@
 import { PrismaClient, UserRole, UserStatus, ApplicationStatus, ApplicationStep, CertificationStatus, DocumentType, PaymentStatus, NotificationType } from '@prisma/client';
-import * as bcrypt from 'bcrypt';
+import bcrypt from 'bcrypt';
 
 const prisma = new PrismaClient();
 
@@ -72,13 +72,6 @@ async function main() {
         bathrooms: 1,
         maxGuests: 4,
         description: 'A beautiful downtown apartment perfect for short-term stays.',
-      },
-      complianceChecklist: {
-        fireDetectors: false,
-        fireExtinguisher: false,
-        firstAidKit: false,
-        emergencyExits: false,
-        carbonMonoxideDetector: false,
       },
     },
   });

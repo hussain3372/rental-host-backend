@@ -1,7 +1,7 @@
 import { Injectable, LoggerService } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import * as winston from 'winston';
-import * as path from 'path';
+import winston from 'winston';
+import path from 'path';
 
 @Injectable()
 export class CustomLogger implements LoggerService {

@@ -1,6 +1,6 @@
 // src/modules/notification/fcm.service.ts
 import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
-import * as admin from 'firebase-admin';
+import admin from 'firebase-admin';
 import { PrismaService } from '../prisma/prisma.service';
 import { ConfigService } from '@nestjs/config';
 import { EnhancedLoggerService } from '../../common/logger/enhanced-logger.service';

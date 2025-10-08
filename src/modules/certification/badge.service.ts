@@ -2,8 +2,8 @@ import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { StorageService } from '../storage/storage.service';
 import { CertificationWithDetails } from './certification.service';
-import * as QRCode from 'qrcode';
-import * as sharp from 'sharp';
+import QRCode from 'qrcode';
+import sharp from 'sharp';
 
 export interface BadgeUrls {
   badgePngUrl: string;

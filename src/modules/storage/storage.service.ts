@@ -3,8 +3,8 @@ import { ConfigService } from '@nestjs/config';
 import { S3StorageProvider } from './providers/s3-storage.provider';
 import { EnhancedLoggerService } from '../../common/logger/enhanced-logger.service';
 import { AuditService } from '../audit/audit.service';
-import * as path from 'path';
-import * as crypto from 'crypto';
+import path from 'path';
+import crypto from 'crypto';
 
 export interface FileUploadResult {
   key: string;
