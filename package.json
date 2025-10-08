@@ -78,7 +78,7 @@
     "winston-elasticsearch": "^0.17.4"
   },
   "devDependencies": {
-    "@nestjs/cli": "^10.3.2",
+    "@nestjs/cli": "^10.4.9",
     "@nestjs/schematics": "^10.1.1",
     "@nestjs/testing": "^10.3.0",
     "@types/bcrypt": "^5.0.2",
