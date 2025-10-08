@@ -46,8 +46,10 @@ import { SettingModule } from './modules/setting/setting.module';
 import { ChecklistModule } from './modules/checklist/checklist.module';
 import { PropertyTypesModule } from './modules/propertyTypes/propertyTypes.module';
 import { TwofaModule } from './modules/twofa/twofa.module';
+import { AppController } from './app.controller';
 
 @Module({
+  controllers: [AppController],
   imports: [
     // Global configuration
     ConfigModule.forRoot({
@@ -98,7 +100,7 @@ import { TwofaModule } from './modules/twofa/twofa.module';
     PublicModule,
     NotificationModule,
     SupportModule,
-    TwofaModule
+    TwofaModule,
   ],
   providers: [
     // Global guards
